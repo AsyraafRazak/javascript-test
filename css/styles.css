@@ -5,24 +5,46 @@ html, body {
 
 /*Sidebar*/
 
-.sidebar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.sidebar {
     width: 20%;
     background-color: #f1f1f1;
     position: fixed;
-    top: 50px;
+    top: 50px; /* adjust if you have a navbar at top */
     height: calc(100% - 50px);
     overflow: auto;
 }
 
+/* Title styling inside sidebar */
+.sidebar-title {
+    padding: 10px;
+    font-size: 18px;
+    margin: 0; /* Remove margin for tighter layout */
+}
+
+/* Nav list styles */
+.sidebar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar-nav li a {
-    text-align: center;
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 8px 16px 8px 30px;
     text-decoration: none;
+    position: relative;
+}
+
+.sidebar-nav li a::before {
+    content: "";
+    position: absolute;
+    left: 16px; /* aligns with padding-left spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #44444446; /* or any color you like */
 }
 
 .sidebar-nav li a:hover:not(.active) {
@@ -70,6 +92,8 @@ html, body {
 .navbar-nav a.active {
     background-color: #04AA6D;
 }
+
+/*Main content*/
 
 .main-content {
     margin-left: 20%; /* Same as sidebar width */
