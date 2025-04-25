@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -9,7 +10,8 @@ html, body {
     width: 20%;
     background-color: #f1f1f1;
     position: fixed;
-    top: 50px; /* adjust if you have a navbar at top */
+    top: 50px;
+    /* adjust if you have a navbar at top */
     height: calc(100% - 50px);
     overflow: auto;
 }
@@ -18,7 +20,8 @@ html, body {
 .sidebar-title {
     padding: 10px;
     font-size: 18px;
-    margin: 0; /* Remove margin for tighter layout */
+    margin: 0;
+    /* Remove margin for tighter layout */
 }
 
 /* Nav list styles */
@@ -39,12 +42,14 @@ html, body {
 .sidebar-nav li a::before {
     content: "";
     position: absolute;
-    left: 16px; /* aligns with padding-left spacing */
+    left: 16px;
+    /* aligns with padding-left spacing */
     top: 50%;
     transform: translateY(-50%);
     width: 2px;
     height: 100%;
-    background-color: #44444446; /* or any color you like */
+    background-color: #44444446;
+    /* or any color you like */
 }
 
 .sidebar-nav li a:hover:not(.active) {
@@ -69,7 +74,7 @@ html, body {
     top: 0;
     width: 100%;
     height: 50px;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .navbar-nav li {
@@ -96,9 +101,12 @@ html, body {
 /*Main content*/
 
 .main-content {
-    margin-left: 20%; /* Same as sidebar width */
-    padding: 10px; /* Optional spacing */
-    margin-top: 50px; /* Push down below navbar */
+    margin-left: 20%;
+    /* Same as sidebar width */
+    padding: 10px;
+    /* Optional spacing */
+    margin-top: 50px;
+    /* Push down below navbar */
 }
 
 /*secondary content*/
@@ -121,4 +129,45 @@ html, body {
 
 .secondary-content code {
     font-size: 14px;
+}
+
+/*Code content*/
+
+.code-content {
+    display: flex;
+    gap: 16px;
+    margin: 10px 0;
+}
+
+.code-box {
+    flex: 1;
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.code-output {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.code-box pre {
+    margin: 0;
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.code-output pre {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #272822;
+    border-radius: 5px;
+    overflow-x: auto;
 }

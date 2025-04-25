@@ -1,5 +1,5 @@
 <?php 
-$page = 'home';
+$pageheader = 'home';
 include('layout/header.php'); 
 ?>
 

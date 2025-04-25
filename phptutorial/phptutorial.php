@@ -1,4 +1,5 @@
 <?php
+$pageheader = 'php';
 $page = 'php';
 include($_SERVER['DOCUMENT_ROOT'] . '/js-test/layout/header.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/js-test/layout/phpsidebar.php');
