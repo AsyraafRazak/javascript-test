@@ -100,3 +100,25 @@ html, body {
     padding: 10px; /* Optional spacing */
     margin-top: 50px; /* Push down below navbar */
 }
+
+/*secondary content*/
+
+.secondary-content {
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 10px 0;
+}
+
+.secondary-content pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+.secondary-content code {
+    font-size: 14px;
+}
